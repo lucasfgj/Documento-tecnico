@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>HTML & CSS</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>HTML & CSS</header>
+        <button>&#9776</button>
+        <ul class="list_1">
+            <li><a href="#int">Introdução</a></li>
+            <li><a href="#_html_">O que é HTML</a></li>
+            <li><a href="#estrutura_html">Estrutura</a></li>
+            <li><a href="#declaracoes">Declarações</a></li>
+            <li><a href="#elementos">Elementos</a></li>
+            <li><a href="#atributos">Atributos</a></li>
+            <li><a href="#_CSS_">O que é Css</a></li>
+            <li><a href="#css_html">CSS + HTML</a></li>
+            <li><a href="#sintaxe">Sintaxe</a></li>
+            <li><a href="#seletores">Seletores css</a></li>
+            <li id="ultimo"><a href="#declaracoes_css">Declarações css</a></li>
+            <li id="ult-2"><a href="">Sair</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <div>
+            <section id="int" class="main-section">
+                <h2>Introdução</h2>
+                <p>Sendo a base do conhecimento para qualquer desenvolverdor WEB, HTML e CSS são linguagens ultilizadas
+                    para
+                    o desenvolvimento de sites; criado em 1991 por Tim Berners-Lee, na Suiça, o html foi criado com o
+                    intuito de compartilhar documentos com mais facilidade entre as instituições de pesquisas proximas,
+                    já o
+                    Css só foi desenvolvido em 1995 pela W3C a fim de facilitar o uso de sites que na epoca era muito
+                    mais
+                    complexa.</p>
+            </section>
+            <section id="_html_" class="main-section">
+                <h2>O que é HTML</h2>
+                <p>Desenvolvido em 1991, html (Hyper Text Markup Language) é uma linguagem de codgos de marcação que
+                    serve
+                    como estrutura base de um web site e tem função de informar ao navegador como exibir o conteúdo
+                    deixando
+                    explicito atraves de sua sintaxe onde ficara o titulo, paragrafo, imagem, cabeçario etc.
+                    Para criar um arquivo HTML basta ter instalado em seu desktop um programa editor de texto comum como
+                    um
+                    bloco de
+                    notas ou outro qualquer, dessa forma, para que um documento seja interpretado pelo navegador, é
+                    necessário que o arquivo tenha a extensão .html e a partir disso, poderá ser exibido por qualquer
+                    navegador web.
+                </p>
+
+            </section>
+            <section id="estrutura_html" class="main-section">
+                <h2>Estrutura HTML</h2>
+                <p>A estrutura base do html é dividido em duas partes principais sendo a primeira o <b>HEAD</b> (cabeça)
+                    e a
+                    segunda o <b>BODY</b> (corpo) onde cada uma tem sua função.</p>
+
+
+                <P><span class="destaque-1">HEAD</span> O elemento que contem as metainformações sobre sua pagina HTML,
+                    no <i>HEAD</i> vão algumas informações importantes sobre sua pagina web, como elementos meta, links,
+                    titulo da pagina web e outros
+                    elementos que daram informções ao navegador de como fazer leitura do arquivo.</P>
+                <ul class="list2">
+
+                    <li>
+                        <spam class="spam_list_2">Meta tags</spam> - São linhas de código ou "etiquetas" que, entre
+                        outras
+                        coisas, descrevem o conteúdo do seu site para os buscadores. É nelas que você vai inserir as
+                        palavras-chave que facilitarão para o usuário na hora de encontrar seu site.
+                    </li>
+                    <li>
+                        <spam class="spam_list_2">Link</spam> - O Elemento < link> especifica as relações entre o
+                            documento atual e um recurso externo. Possíveis usos para este elemento incluem a definição
+                            de uma estrutura relacional para navegação.
+                    </li>
+                    <li>
+                        <spam class="spam_list_2">Title</spam> - O elemento HTML < title> (Elemento HTML Título) define
+                            o
+                            título do documento, mostrado na barra de título de um navegador ou na aba da página. Pode
+                            conter somente texto e quaisquer marcações contidas no texto não são interpretadas.
+                    </li>
+                </ul>
+
+                <p><span class="destaque-1">BODY</span> O elemento que contem todo o "esqueleto" do HTML, nele fica toda
+                    a parte que será visualizada pelos usuarios do site tais como paragrafo, titulos e subtitulos,
+                    imagens, que são determinadas atraves dos elementos ou tags.</p>
+
+            </section>
+            <section id="declaracoes" class="main-section">
+                <h2>Declarações</h2>
+                <p>Ao começar a escrever o <i>html</i> é necessario fazer algumas declarações que serão importantes para
+                    que
+                    o navegador entenda que tipo de arquivo está sendo acessado, estas declarações costumam ficar antes
+                    do
+                    <i>head</i>; uma das mais importantes é a DOCTYPE, que tem a função de informar qual é o tipo de
+                    arquivo
+                    <i>html</i>, depois a < html lang> que serve para informar ao navegador o indioma do site.
+
+                        <span class="alerta">OBS: Caso não seja declarado o doctype, o navegador interpretará como a
+                            ultima
+                            versão disponivel pelo navegador, atualmente a ultima versão é o HTML5 que é declarada como
+                            na
+                            imagem a baixo.</span>
+
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_1" src="https://www.seobility.net/en/wiki/images/a/a6/HTML-Doctype.png"
+                        alt="exemplo do doctype">
+                </figure>
+
+            </section>
+            <section id="elementos" class="main-section">
+                <h2>Elementos</h2>
+                <p>
+                    Os elementos HTML ou tags HTML, são utilizados para informar ao navegador que tipo de estrutura é
+                    essa
+                    que está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros.
+
+                    As tags são formadas por uma estrutura própria, iniciam com o sinal “menor que”( <span class="reed">
+                        < </span> ), em seguida vem o nome daquele elemento e por fim, o sinal “maior que”( <span
+                                class="reed"> > </span> ). Podem ser dispostas em tags que precisam de fechamento e tags
+                            que
+                            fecham sozinhas (self-closing). O fechamento de uma tag será definido com uma barra ( <span
+                                class="reed"> / </span> ), sendo que no caso das tags de auto fechamento, não há
+                            necessidade
+                            da
+                            presença desse caractere.
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_2"
+                        src="https://lh4.googleusercontent.com/x2q6wse09UN1AOKEz6rex7UBqzn6ddpw1bUV8Yv44zr-hcFZ2YLi23flW8FtNt0_RmZTVssvY-0npivB_g6L7nWzLh6merrTXK6-bHdsqcA_r59X1D2LpJss1fKTA-2YBmrk2Mgd"
+                        alt="Exemplo de tag com ou sem abertura">
+                </figure>
+                <p>
+
+                    As tags podem ser categorizadas inicialmente em dois tipos, em “nível de bloco” (block-level) e
+                    “em linha” (inline). Um elemento em nível de bloco ocupa toda a largura de seu elemento pai, que
+                    também chamamos de elemento container, criando assim um “bloco”. Já os elementos inline,
+                    geralmente usamos para demarcação de conteúdos de texto.
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_3"
+                        src="https://www.alura.com.br/artigos/assets/o-que-e-html-suas-tags-parte-1-estrutura-basica/imagem1.png"
+                        alt="Dois elementos p primeiro em nivel de bloco e o segundo em nivel de linha">
+                </figure>
+                <p> O elemento <span class="destaque_2">
+                        < main>
+                    </span> define o conteúdo principal dentro do < body> em seu documento ou aplicação. Entende-se como
+                        conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a
+                        funcionalidade central da aplicação.
+                </p>
+                <P>
+                    O elemento <span class="destaque_2">
+                        < div>
+                    </span> é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele
+                    pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id).
+                </P>
+                <figure>
+                    <img class="exemplo" id="img_4"
+                        src="https://user-images.githubusercontent.com/92090/201944530-c9e13e36-a290-4bd0-931d-919cfb87f748.gif"
+                        alt="exemplo de DIV e Main">
+                </figure>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < header>
+                    </span> representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de
+                    cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa, e
+                    outros.
+                </p>
+                <p>
+                    O Elemento <span class="destaque_2">
+                        < nav>
+                    </span> representa uma seção de uma página que aponta para outras páginas ou para outras áreas da
+                    página, ou seja, uma seção com links de navegação.
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < section>
+                    </span> representa uma seção genérica contida em um documento HTML, geralmente com um título, quando
+                    não existir um elemento semântico mais específico para representá-lo.
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < footer>
+                    </span> representa um rodapé para o seu sectioning content (conteúdo de seção), Normalmente um
+                    rodapé contém informações sobre o autor da seção de dados, direitos autorais ou links para
+                    documentos relacionados.
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_5"
+                        src="https://projects-static.raspberrypi.org/projects/happy-birthday/83d15adc783ef04738673cae7042beb875431d04/pt-BR/images/birthday-starter.png"
+                        alt="imagem exemplifica o aninhamento de um paragrafo">
+                </figure>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < p>
+                    </span> representa um parágrafo. Em mídias visuais, parágrafos são representados como blocos
+                    indentados de texto com a primeira letra avançada e separados por linhas em branco.
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < li>
+                    </span> (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de
+                    uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada <span
+                        class="destaque_2">
+                        < ol>
+                    </span>, uma lista desordenada <span class="destaque_2">
+                        < ul>
+                    </span>
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < a>
+                    </span> (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas web, arquivos,
+                    endereços de emails, ligações na mesma página ou endereços na URL.
+                </p>
+                <p>
+                    Os elementos HTML <span class="destaque_2">
+                        < h1>
+                    </span> a <span class="destaque_2">
+                        < h6>
+                    </span>spa representam seis níveis de título de seção. < h1> é o nível de seção mais alto e < h6> é
+                            o mais baixo.
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_6"
+                        src="https://helpx.adobe.com/content/dam/help/da/digital-publishing-suite/help/embed-fonts-html-articles/jcr%3acontent/main-pars/image_1/html_sample.png.img.png"
+                        alt="exemplo de uma estrutura html">
+                </figure>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < span>
+                    </span> é um conteiner generico em linha para conteúdo fraseado , que não representa nada por
+                    natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class
+                    ou id )
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < img>
+                    </span> representa a inserção de imagem no documento, sendo implementado também pelo HTML5 para uma
+                    melhor experiência com o elemento < figure> e < figcaption>.
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < figure>
+                    </span> HTML representa conteúdo autocontido, potencialmente com uma legenda opcional, que é
+                    especificada usando o < figcaption> elemento.
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < figcaption>
+                    </span>representa uma legenda ou uma legenda associada com uma figura ou ilustração descrita pelo
+                    resto dos dados do elemento < figure> que seu elemento pai.
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_7"
+                        src="https://pt-static.z-dn.net/files/d99/49a9674cd54cf971b6e07946b6b4ae4b.png" alt="">
+                </figure>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < button>
+                    </span> representa um botão clicável.
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < form>
+                    </span> representa uma seção de um documento que contém controles interativos que permitem ao
+                    usuário submeter informação a um determinado servidor web.
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < label>
+                    </span> representa uma legenda para um item em uma interface de usuário. Ele pode estar associado
+                    com um elemento de controle, colocando este dentro do elemento label, ou usando o atributo "for".
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < input>
+                    </span> é usado para criar controles interativos para formulários baseados na web para receber dados
+                    do usuário. A semântica de um < input> varia consideravelmente dependendo do valor de seu atributo
+                        <I>type</I>.
+                </p>
+                <p>
+                    O elemento <span class="destaque_2">
+                        < select>
+                    </span> representa um controle que apresenta um menu de opções. As opções dentro do menu são
+                    representadas pelo elemento < option>.
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_8"
+                        src="http://www.hiperbytes.com.br/wp-content/uploads/2013/10/Cap6Exercicio.jpg" alt="">
+                </figure>
+
+            </section>
+            <section id="atributos" class="main-section">
+                <h2>Atributos</h2>
+                <p>
+                    Atributos HTML são palavras especiais usadas dentro da tag de abertura para controlar o
+                    comportamento do elemento. Os atributos geralmente são usados para apontar para uma folha de estilo
+                    ou por um JavaScript quais elementos <i>HTML</i> acessar e manipular .
+                </p>
+
+                <p>
+                    <span class="destaque_3">Class ( . )</span> é usado para especificar uma classe para um ou mais
+                    elementos <i>HTML</i> , para que no CSS estilizar uma tag específica, ou um conjunto de tags. Também
+                    é possível usar no JavaScript para selecionar uma tag específica.
+                </p>
+                <p>
+                    <span class="destaque_3">id ( # )</span> especifica um id exclusivo para um elemento HTML. O valor
+                    do atributo ID deve ser exclusivo a somente um elemento em todo o arquivo <i>HTML</i>. É utilizado
+                    para identificar destino de âncoras, labels e outras funcionalidades neste sentido.
+                </p>
+                <p>
+                    <span class="destaque_3">src</span> utilizado para indicar para a tag qual arquivo ou mídia
+                    utilizar. Recebe valores como links ou o nome de um arquivo já presente no projeto.
+                </p>
+                <p>
+                    <span class="destaque_3">href</span> Para a tag < a>, o atributo href especifica a URL da página
+                        para a qual o link vai.Para elementos < link>, o atributo href especifica a localização (URL) do
+                            recurso externo (geralmente um arquivo de folha de estilo).
+                </p>
+
+            </section>
+        </div>
+        <div>
+            <section id="_CSS_" class="main-section">
+                <h2>O que é CSS</h2>
+                <P> CSS é chamado de linguagem Cascading Style Sheet (Folha de Estilo em Cascatas) e é usado para
+                    estilizar elementos escritos em uma linguagem de marcação como <i>HTML</i>, o CSS foi desenvolvido
+                    pelo W3C (World Wide Web Consortium) em 1996, por uma razão bem simples, o HTML não foi projetado
+                    para ter tags que ajudariam a formatar a página, Você deveria apenas escrever a marcação para o
+                    site. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre
+                    parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas
+                    respectivas telas e assim por diante.</P>
+
+            </section>
+            <section id="css_html" class="main-section">
+                <h2>CSS+HTML</h2>
+                <p>
+                    Após salvar como (style.css) precisamos colocar o arquivo em nosso arquivo HTML, porque é ele quem
+                    vai carregar o CSS; O código CSS pode ser definido para um documento HTML de 3 formas: através de um
+                    código separado carregado pela tag < link>; através do código construído no próprio documento
+
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_9"
+                        src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/03/como-incorporar-css.webp"
+                        alt="exemplo do link css">
+                </figure>
+            </section>
+            <section id="sintaxe" class="main-section">
+                <h2>Sintaxe</h2>
+                <p>
+                    A construção do código CSS precisa obedecer a seguinte sintaxe:
+                </p>
+                <figure>
+                    <img class="exemplo" id="img_10" src="https://www.w3schools.com/css/img_selector.gif"
+                        alt="sintaxe do css">
+                </figure>
+                <p>
+                    O seletor aponta para o elemento HTML que você deseja estilizar, o bloco de declaração contém uma ou
+                    mais declarações separadas por ponto e vírgula, cada declaração inclui um nome de propriedade CSS e
+                    um valor, separados por dois pontos.Várias declarações CSS são separadas por ponto e vírgula e os
+                    blocos de declaração são cercados por chaves.
+                </p>
+                <figure>
+                    <img class="exemplo" id=img_11
+                        src="https://www.alura.com.br/artigos/assets/uploads/2017/07/image_6-3.png" alt="">
+                </figure>
+            </section>
+            <section id="seletores" class="main-section">
+                <h2>Seletores Css</h2>
+                <p>
+                    Os Seletores definem quais elementos um conjunto de regras CSS se aplica. Este seletores básicos
+                    escolhem todos os elementos que correspondem ao nome fornecido, seja ele um elemento, nome, classe
+                    ou Id.
+                </p>
+                <figure>
+                    <img class="exemplo"
+                        src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/03/incorporando-css-no-html.webp"
+                        alt="">
+                </figure>
+            </section>
+            <section id="declaracoes_css" class="main-section">
+                <h2>Declarações Css</h2>
+                <p>
+                    A propriedade e valor são chamados de declaração, e qualquer motor do CSS calcula quais declarações
+                    serão aplicadas para todos um único elemento da página em ordem adequadamente, a fim de exibí-lo com
+                    o estilo correto. Tanto as propriedades como os valores são case-sensitive no CSS.
+                </p>
+                <p>
+                    Existem mais de 100 propriedades diferentes no CSS e um número quase infinito de diferentes valores.
+                    Nem todos os pares de propriedades e valores são permitidos em cada propriedade define o que são
+                    valores válidos. Quando um valor não é válido para uma determinada propriedade, a declaração é
+                    considerada inválida e é totalmente ignorada pelo motor do CSS.
+                </p>
+                <p>
+                    A propriedade <span class="destaque_4">Background</span> é usada para adicionar efeitos de
+                    plano de fundo aos elementos.
+                </p>
+                <ul class="list-3">
+                    <li>Background-Color - propriedade especifica a cor de fundo de um elemento.</li>
+                    <li>Background-Image - propriedade especifica uma imagem a ser usada como plano de fundo de um
+                        elemento</li>
+                </ul>
+                <p>
+                    A propriedade <span class="destaque_4">Border</span> permite que você especifique o
+                    estilo, a largura e a cor da borda de um elemento.
+                </p>
+                <ul class="list-3">
+                    <li>Border-style - propriedade especifica que tipo de borda exibir.</li>
+                    <li>Border-width - propriedade especifica a largura das quatro bordas.</li>
+                    <li>Border-color - propriedade especifica a cor da borda.</li>
+                </ul>
+                <p>
+                    A propriedade <span class="destaque_4">Margin</span> é usada para criar espaço ao redor dos
+                    elementos, fora de qualquer borda definida.
+                </p>
+                <ul class="list-3">
+                    <li>Margin-top - propriedade que especifica a margem superior</li>
+                    <li>Margin-right - propriedade que especifica a margem direita</li>
+                    <li>Margin-bottom - propriedade que especifica a margem inferior</li>
+                    <li>Margin-left - propriedade que especifica a margem esquerda</li>
+                </ul>
+                <p>
+                    A propriedade <span class="destaque_4">Padding</span> é usado para criar espaço ao redor do conteúdo
+                    de um elemento, dentro de qualquer borda definida.
+                </p>
+                <ul class="list-3">
+                    <li>Padding-top - propriedade que especifica a margem superior</li>
+                    <li>Padding-right - propriedade que especifica a margem direita</li>
+                    <li>Padding-bottom - propriedade que especifica a margem inferior</li>
+                    <li>Padding-left - propriedade que especifica a margem esquerda</li>
+                </ul>
+                <figure>
+                    <img calss="exemplo" id="img_12"
+                        src="http://www.avajava.com/tutorials/cascading-style-sheets/how-are-margins-borders-padding-and-content-related/how-are-margins-borders-padding-and-content-related-01.gif"
+                        alt="ilustração exemplificando margin, padding, border.">
+                </figure>
+                <p>
+                    A propriedade <span class="destaque_4">Color</span> é usada para definir a cor do Texto, Borda,
+                    Background, link entre outros. A cor é especificada por:
+                </p>
+                <ul class="list-3">
+                    <li>Um nome de cor - como "vermelho"</li>
+                    <li>Um valor Hexadecimal - cor hexadecimal é especificada com: #RRGGBB, onde os inteiros
+                        hexadecimais RR (vermelho), GG (verde) e BB (azul) especificam os componentes da cor. Todos os
+                        valores devem estar entre 00 e FF.</li>
+                    <li>Um valor RGB - cor RGB é especificado com a função rgb( ) , que tem a seguinte sintaxe "rgb
+                        (red, green, blue)" como "rgb(255,0,0)"</li>
+                    <li>Um valor HSL - HSL significa matiz, saturação e luminosidade - e representa uma representação de
+                        cores em coordenadas cilíndricas.</li>
+                </ul>
+                <p>
+                    A propriedade <span class="destaque_4">Position</span> especifica o tipo de método de posicionamento
+                    usado para um elemento.
+                </p>
+                <ul class="list-3">
+                    <li>Um elemento com position: static; não é posicionado de nenhuma maneira especial; está sempre
+                        posicionado de acordo com o fluxo normal da página.</li>
+                    <li>Um elemento com position: relative; é posicionado em relação à sua posição normal.</li>
+                    <li>Um elemento com position: fixed; é posicionado em relação à viewport, o que significa que ele
+                        sempre permanece no mesmo lugar, mesmo que a página seja rolada. As propriedades superior,
+                        direita, inferior e esquerda são usadas para posicionar o elemento.</li>
+                    <li>Um elemento com position: absolute;é posicionado em relação ao ancestral posicionado mais
+                        próximo </li>
+                    <li>Um elemento com position: sticky;é posicionado com base na posição de rolagem do usuário.</li>
+                </ul>
+                <p>
+                    As propriedades <span class="destaque_4">Width</span> e <span class="destaque_4"> Height</span> são
+                    usados ​​para definir a altura e a largura de um elemento.
+                    As propriedades de altura e largura não incluem preenchimento, bordas ou margens. Ele define a
+                    altura/largura da área dentro do preenchimento, borda e margem do elemento (content).
+                </p>
+                <ul class="list-3">
+                    <li>Width - Define a largura do elemento</li>
+                    <li>Height - Define a altura do elemento.</li>
+                </ul>
+            </section>
+        </div>
+        <footer id="rodape">
+            <div class="txt-rodape">
+                <p>
+                    Boa parte das informções e imagens contidas neste site foram obtidas na web, caso deseje saber
+                    mais acesse o site
+                </p>
+            </div>
+            <div class="links-rodape">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element">developer.mozilla.org</a>
+                <a href="https://www.w3schools.com/css/default.asp">www.w3schools.com</a>
+                <a href="https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css">www.hostinger.com.br</a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
