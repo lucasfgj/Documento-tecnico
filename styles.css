@@ -25,9 +25,11 @@ header {
 ul {
     padding: 0;
 }
-.list_1{
+
+.list_1 {
     overflow: hidden;
 }
+
 #navbar li {
     list-style: none;
     border-top: 2px solid rgb(0, 0, 0);
@@ -39,9 +41,11 @@ ul {
 #ultimo {
     border-bottom: 2px solid rgb(0, 0, 0);
 }
-#ult-2{
+
+#ult-2 {
     display: none;
 }
+
 nav a {
     display: block;
     font-size: 20px;
@@ -56,9 +60,11 @@ a:hover {
 
 main {
     text-decoration: none;
-    width: 80%;
+    width: auto;
     margin-left: 300px;
-    position: absolute;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    position: relative;
     background-color: #fffefe;
 }
 
@@ -83,9 +89,11 @@ figure img {
 #img_8 {
     width: 25%;
 }
-#img_12{
+
+#img_12 {
     width: 30%;
 }
+
 h2 {
     font-size: 28px;
 }
@@ -136,51 +144,59 @@ h2 {
     font-size: 20px;
     color: #610404ab;
 }
-.list-3{
+
+.list-3 {
     margin-top: 8px;
     list-style-position: inside;
     list-style-type: none;
     margin-left: 25PX;
 }
 
-.list-3 > li{
+.list-3>li {
     list-style-position: inside;
     list-style-type: none;
 }
 
 #rodape {
+    background-color: #fffdfd;
     border-top: solid rgb(128, 128, 128);
-    margin-top: 15px;
-    margin-left: -64px;
     width: 100%;
-    padding: 15px;
-    position: absolute;
+    padding: 15px 0;
+    position: relative;
 }
-.txt-rodape{
+
+.txt-rodape {
     width: 100%;
     margin: 0 auto;
 }
-.txt-rodape p{
+
+.txt-rodape p {
     text-align: center;
 }
-.links-rodape{
+
+.links-rodape {
     display: flex;
     text-align: center;
     justify-content: space-around;
 }
-button{
+
+button {
     background-color: transparent;
     border: none;
     font-size: 35px;
     position: absolute;
     display: none;
 }
-button:focus ~ .list_1{
+
+button:focus~.list_1 {
     height: 100%;
 }
 
-@media (max-width: 700px){
-    header{
+@media (max-width: 700px) {
+    body{
+        display: inline;
+    }
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -189,7 +205,8 @@ button:focus ~ .list_1{
         width: 100%;
         background-color: #fffefe;
     }
-    nav{
+
+    nav {
         background: transparent;
         width: 100%;
         display: flex;
@@ -197,34 +214,49 @@ button:focus ~ .list_1{
         margin: 0;
         z-index: 2;
     }
-    ul a{
-        text-align: center; 
+
+    ul a {
+        text-align: center;
     }
-    .list_1{
+
+    .list_1 {
         height: 0;
         background-color: #fffefe;
         margin-top: 110px;
     }
-    button{
+
+    button {
         display: flex;
         font-size: 60px;
         align-items: center;
     }
-    button:hover{
+
+    button:hover {
         background-color: rgb(240, 255, 255);
     }
-    main{
-        position: relative;
-        top:120px;
+
+    main {
+        top: 120px;
         margin: 0 auto;
+        height: auto;
         width: 80%;
+        margin-bottom: 14vh;
         z-index: 1;
     }
+
     .exemplo {
         width: 100%;
         object-fit: cover;
     }
-    #rodape{
-        width: 120%;
+    #img_1, #img_8, #img_12{
+        width: 75vw;
+    }
+
+    #rodape {
+        width: 100%;
+        height: 7vh;
+        margin-bottom: 0;
+        bottom: 0; 
+
     }
 }
